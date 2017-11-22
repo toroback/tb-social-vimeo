@@ -1,0 +1,28 @@
+{
+  "name": "tb-social-vimeo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toroback/tb-social-vimeo.git"
+  },
+  "keywords": [
+    "toroback",
+    "backend",
+    "social",
+    "vimeo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toroback/tb-social-vimeo/issues"
+  },
+  "homepage": "https://github.com/toroback/tb-social-vimeo#readme",
+  "dependencies": {
+    "vimeo": "^1.2.1"
+  }
+}
