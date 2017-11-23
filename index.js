@@ -58,7 +58,7 @@ function streamUpload(lib, filePath, progressCB){
           if(error){
             reject(error)
           }else{
-            resolve({uri: body.uri, link: body.link});
+            resolve({uri: body.uri, url: body.link});
           }
         });
       }
@@ -66,13 +66,16 @@ function streamUpload(lib, filePath, progressCB){
   });
 }
 
+/*
+ Sube a vimeo un archivo ubicado en una url.
+ */
 function postVideoLink(lib, link){
   return new Promise((resolve, reject) =>{
     lib.request({method: "POST", path: "/me/videos", query: {type: "pull", link: link}}, function (error, body, status_code, headers){
       if (error) {
         reject(error)
       }else{    
-        resolve({uri: body.uri, link: body.link});
+        resolve({uri: body.uri, url: body.link});
       }
     });
   });
@@ -93,7 +96,6 @@ function editVideo(lib, video, options){
   });
 }
 
-
-
-
 module.exports = Adapter;
+
+
